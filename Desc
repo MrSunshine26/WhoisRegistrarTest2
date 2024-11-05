@@ -1,0 +1,8 @@
+This Script runs domains from a CSV through various WHo is checks to aid with Domain intel
+It outputs a CSV with the selected outputs linked to the domain
+Explanation:
+defang(): This function converts defanged domains back to their normal form.
+
+whois_check(): This function performs the WHOIS lookup and returns the creation date and registrar. If there's an error (e.g., the domain doesn't exist), it returns "N/A".
+
+process_csv(): This function reads the input CSV, processes each domain, and writes the output to a new CSV file with columns for the domain, creation date, and registrar.
