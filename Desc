@@ -6,3 +6,81 @@ defang(): This function converts defanged domains back to their normal form.
 whois_check(): This function performs the WHOIS lookup and returns the creation date and registrar. If there's an error (e.g., the domain doesn't exist), it returns "N/A".
 
 process_csv(): This function reads the input CSV, processes each domain, and writes the output to a new CSV file with columns for the domain, creation date, and registrar.
+
+If you want to add more Who is checks you have to modify the whois_check() and the process_csv() parts of the Code
+
+For the whois_check() you have to create the necessary variables using the whois format
+
+For the process_csv() part is it just adding the new fields to the CSV handling following the format used.
+
+Here are additional fields you can ouput with WHois:
+
+Domain Name: The domain name itself.
+
+Registry Domain ID: Unique identifier for the domain in the registry database.
+
+Registrar WHOIS Server: The server used by the registrar for WHOIS queries.
+
+Registrar URL: URL of the registrar.
+
+Updated Date: The last time the WHOIS record was updated.
+
+Registry Expiry Date: When the domain registration is set to expire.
+
+Domain Status: Current status of the domain (e.g., active, expired).
+
+Registrant Name: Name of the person or entity that registered the domain.
+
+Registrant Organization: Organization associated with the registrant.
+
+Registrant Street: Street address of the registrant.
+
+Registrant City: City of the registrant.
+
+Registrant State/Province: State or province of the registrant.
+
+Registrant Postal Code: Postal code of the registrant.
+
+Registrant Country: Country of the registrant.
+
+Registrant Phone: Phone number of the registrant.
+
+Registrant Email: Email address of the registrant.
+
+Admin Name: Name of the administrative contact for the domain.
+
+Admin Organization: Organization of the administrative contact.
+
+Admin Street: Street address of the administrative contact.
+
+Admin City: City of the administrative contact.
+
+Admin State/Province: State or province of the administrative contact.
+
+Admin Postal Code: Postal code of the administrative contact.
+
+Admin Country: Country of the administrative contact.
+
+Admin Phone: Phone number of the administrative contact.
+
+Admin Email: Email address of the administrative contact.
+
+Tech Name: Name of the technical contact for the domain.
+
+Tech Organization: Organization of the technical contact.
+
+Tech Street: Street address of the technical contact.
+
+Tech City: City of the technical contact.
+
+Tech State/Province: State or province of the technical contact.
+
+Tech Postal Code: Postal code of the technical contact.
+
+Tech Country: Country of the technical contact.
+
+Tech Phone: Phone number of the technical contact.
+
+Tech Email: Email address of the technical contact.
+
+Name Servers: The DNS servers associated with the domain.
